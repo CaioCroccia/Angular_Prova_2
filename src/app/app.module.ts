@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { CaioHomeComponent } from './caio-home/caio-home.component';
 import { CaioTasksComponent } from './caio-tasks/caio-tasks.component';
+import { CaioTaskService } from './caio-task.service';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(
@@ -14,6 +15,7 @@ import { CaioTasksComponent } from './caio-tasks/caio-tasks.component';
 
   ) ],
   declarations: [ AppComponent, HelloComponent, CaioHomeComponent, CaioTasksComponent ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers: [CaioTaskService]
 })
 export class AppModule { }
